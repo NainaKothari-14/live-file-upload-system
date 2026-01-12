@@ -43,13 +43,27 @@ live-upload-system/
 
 ### Backend
 
-Install dependencies and start the backend server. Ensure Kafka, Redis, and Elasticsearch are running before starting the server.
+```bash
+cd backend
+npm install
+node server.js
+```
 
-Optional: Use Docker Compose to run required services.
+Optional: Use Docker Compose to run Kafka, Redis, and Elasticsearch:
+
+```bash
+docker-compose up -d
+```
 
 ### Frontend
 
-Install dependencies and start the development server. The application will be available in your browser at the default Vite port.
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
 
 ## Usage
 
